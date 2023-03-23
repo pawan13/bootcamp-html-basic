@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Register new user</h1>
+    <hr>
+ <!-- action: where is the server, a link -->
+ <!-- method: get, post -->
+    <form action="#" method="" enctype="multipart/form-data">
+        <p>
+        <label for="FName"> First Name:</label>
+        <input id="FName" name="fName" type="text" placeholder="Pawan Siwakoti" required
+        minlength="3"
+        maxlength="10">
+        </p>
+        <p>
+            <label for="email"> Email:</label>
+        <input id="email" name="email" type="text" required>
+        </p>
+        <p>
+            <label for="phone"> Phone:</label>
+        <input id="phone" name="phone" type="number" required
+        min="0123456789"
+        max="0123456789">
+        </p>
+        <p>
+            <label for="password"> Password:</label>
+        <input id="password" type="password">
+        </p>
+        <p>
+            <label for=""> FB link:</label>
+        <input  type="url" placeholder="http://something.com">
+        </p>
+        <p>
+            <label for=""> Date:</label>
+        <input  type="date">
+        </p>
+         <label for=""> Bio:</label>
+        <p>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        </p>
+
+        <p>
+        <label for=""> Gender:</label>
+        <input name="gender" type="radio"><label for=""> Male</label>
+        <input name="gender" type="radio"><label for=""> Female</label>
+        <input name="gender" type="radio"><label for=""> N/A</label>
+        </p>
+
+        <p>
+            <input type="checkbox">
+            <label for="">I agree t&cs</label>
+        </p>
+
+        <p>
+            <label for="">Select your favourite Fruit</label>
+            <select name="" id="">
+                <!-- multiple attribute allow you to select multiple items -->
+                <option value="">-- select --</option>
+                <option value="">Apple</option>
+                <option value="">Banana</option>
+                <option value="">Mango</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="">Upload Files</label>
+            <input type="file" multiple>
+        </p>
+       
+        <p>
+        <input  type="submit" value="create">
+        </p>
+    </form>
+</body>
+</html>
